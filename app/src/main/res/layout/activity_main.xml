@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="30dp">
+
+    <EditText
+        android:id="@+id/usd"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:hint="Dollar"
+        android:inputType="number"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/bdt"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_below="@+id/usd"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:inputType="number"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="60sp"
+        android:layout_below="@+id/bdt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:background="@color/black"
+        android:onClick="click"
+        android:text="USD  to INR"
+        android:textColor="@color/white"
+        tools:ignore="HardcodedText" />
+
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_below="@+id/submit"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="80dp"
+        android:background="@color/black"
+        android:onClick="reset"
+        android:text="RESET"
+        android:textColor="@color/white"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>
